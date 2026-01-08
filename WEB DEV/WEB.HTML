@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Business Name — Funterrance Bouncing Castles</title>
+    <meta name="description" content="Entertainmentservices. Happiness Is a Choice." />
+    <style>
+        :root{                                                                                                                                                                                                                                  
+            --accent:#0b76ef;
+            --muted:#6b7280;
+            --bg:#f7fafc;
+            --card:#ffffff;
+            --radius:12px;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            background:linear-gradient(180deg, #7c2cb1 0%, var(--bg) 100%);
+            color:#0f1724;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            line-height:1.45;
+            padding:32px;
+        }
+        .container{max-width:1100px;margin:0 auto}
+        header{
+            display:flex;
+            gap:24px;
+            align-items:center;
+            justify-content:space-between;
+            margin-bottom:28px;
+        }
+        .brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit}
+        .logo{
+            width:44px;height:44px;border-radius:10px;
+            background:linear-gradient(135deg,var(--accent),#6ee7b7);
+            display:inline-grid;place-items:center;color:#fff;font-weight:700;font-size:18px;
+            box-shadow:0 6px 18px rgba(11,118,239,0.12);
+        }
+        nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
+        nav a{color:var(--muted);text-decoration:none;font-weight:600}
+        .cta-btn{
+            background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;
+            box-shadow:0 8px 30px rgba(11,118,239,0.12);
+        }
+
+        /* Hero */
+        .hero{
+            display:grid;
+            grid-template-columns:1fr;
+            gap:24px;
+            align-items:center;
+            margin-bottom:40px;
+        }
+        .hero-inner{display:flex;flex-direction:column;gap:18px}
+        h1{margin:0;font-size:clamp(28px,4vw,40px);line-height:1.05}
+        p.lead{margin:0;color:var(--muted);max-width:64ch}
+        .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+        .feature-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:16px;margin-top:6px;
+        }
+        .card{
+            background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(9,30,66,0.04);
+        }
+        .card h3{margin:0 0 8px 0;font-size:16px}
+        .card p{margin:0;color:var(--muted);font-size:14px}
+
+        /* Two column section */
+        .two-col{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start;margin-bottom:40px}
+        .about{background:var(--card);padding:18px;border-radius:var(--radius)}
+        .contact{background:linear-gradient(180deg,#fff,#fbfdff);padding:18px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(11,118,239,0.06)}
+        form{display:flex;flex-direction:column;gap:12px}
+        input,textarea,select{
+            width:100%;padding:10px 12px;border:1px solid #e6eef8;border-radius:8px;font-size:14px;
+        }
+        button[type="submit"]{
+            background:var(--accent);color:#fff;padding:10px 12px;border:0;border-radius:8px;font-weight:700;
+        }
+
+        footer{margin-top:40px;text-align:bottom;color:var(--muted);font-size:14px;padding:18px 0}
+        .socials{display:flex;gap:12px;justify-content:bottom;margin-top:10px}
+        .socials a{color:var(--muted);text-decoration:none}
+
+        @media (max-width:880px){
+            .two-col{grid-template-columns:1fr}
+            header{flex-direction:column;align-items:flex-start;gap:12px}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="brand" href="#">
+                <div class="logo">FT Bouncing Castles</div>
+                <div>
+                    <div style="font-weight:800">FUNTERRANCE </div>
+                    <div style="font-size:12px;color:var(--muted)">Entertainment Services</div>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="cta-btn" href="#contact">Get Started</a>
+        </header>
+
+        <section class="hero">
+            <div class="hero-inner">
+                <h1 style="color:red ;margin:0;font-weight:700">FUNTERRANCE</h1>
+                <h2 style="color:blue ;margin:0;font-weight:600">Bouncing Castle Rentals in Nairobi CBD</h2>
+                <p class="lead" style="color: black">SERVICES: Bouncing castles, Trampoline, Wet/dry slides, pool, Climbing tower, Clown and Face painting </p>
+                <div class="hero-cta">
+                    <a class="cta-btn" href="#contact">Schedule a Consultation</a>
+                    <a href="#services" style="padding:10px 12px;border-radius:10px;background:transparent;color:var(--accent);font-weight:700;text-decoration:none;border:1px solid rgba(11,118,239,0.08)">View Services</a>
+                </div>
+
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="two-col">
+            <div class="about" id="about">
+                <h2 style="margin-top:0">About Us</h2>
+                <p style="color:var(--muted)">.Take kids out for fun and excitement with our bouncing castle rentals in Nairobi CBD.</p>
+                <ul style="margin-top:10px;color:grey;padding-left:14px">
+                    <li style="color:indianred">Bouncing castles</li>
+                    <li style="color:indianred">Trampoline</li>
+                    <li style="color:indianred">Climbing Tower</li>
+                    <li style="color:indianred">Wet/Dry Slides</li>
+                    <li style="color:indianred">Pool Rentals</li>
+                    <li style="color:indianred">Face Painting & Clown</li>
+                    <li style="color:indianred">Mascot</li>
+                    <li style="color:indianred">Decoration</li>
+                </ul>
+                <div style="margin-top:18px;display:flex;gap:12px">
+                    <a class="cta-btn" href="#contact">Work with us</a>
+                   
+                </div>
+            </div>
+
+            <aside class="contact" id="contact">
+                <h3 style="margin:0 0 6px 0">Get in touch</h3>
+                <p style="margin:0 0 12px 0;color:blueviolet;font-size:14px">clients required to provide details.</p>
+                <form onsubmit="handleSubmit(event)">
+                    <input type="text" name="name" placeholder="Full name" required />
+                    <input type="tel" name="phone" placeholder="Phone Number" required />
+                    
+                    <select name="service" aria-label="Service">
+                        <option value="">Select a service</option>
+                       
+                        
+                        <option>Bouncing castles</option>
+                       
+                    </select>
+                     <button type="Submit">Submit details</button>
+                        
+                    <textarea name="message" rows="5" placeholder="Brief description" required></textarea>
+                    <button type="submit">Send message</button>
+                    <div style="font-size:12px;color:var(--muted);margin-top:6px">Or email us at <a href="funterrancebouncingcastles@gmail.com">funterrancebouncingcastles@gmail.com</a></div>
+                </form>
+            </aside>
+        </section>
+
+        <footer>
+            <div>© <span id="year"></span> FT Bouncingcastles. All rights reserved.</div>
+            <div class="socials" aria-hidden="true">
+                <a href="#" title="Twitter" aria-label="Twitter">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 5.75c-.63.28-1.3.47-2 .56a3.45 3.45 0 0 0-6 2v.5A9.8 9.8 0 0 1 3.15 4.5a3.5 3.5 0 0 0 .98 4.66c-.52 0-1.02-.16-1.45-.4v.04c0 1.7 1.2 3.12 2.8 3.44-.46.12-.95.15-1.44.06.41 1.28 1.6 2.2 3.02 2.23A6.95 6.95 0 0 1 2 18.12a9.82 9.82 0 0 0 5.32 1.56c6.38 0 9.87-5.28 9.87-9.86v-.45A7.1 7.1 0 0 0 22 5.75z" fill="currentColor"/></svg>
+                </a>
+                <a href="#" title="LinkedIn" aria-label="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4.98 3.5a2.34 2.34 0 1 1 0 4.68 2.34 2.34 0 0 1 0-4.68zM3 9h4v12H3zM10 9h3.8v1.6h.1c.5-.96 1.72-1.96 3.54-1.96C21.5 8.64 22 12 22 15.8V21h-4v-4.7c0-1.13-.02-2.59-1.58-2.59-1.58 0-1.82 1.24-1.82 2.5V21h-4z" fill="currentColor"/></svg>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        function handleSubmit(e){
+            e.preventDefault();
+            const f = e.target;
+            const data = new FormData(f);
+            const body = Array.from(data.entries()).map(([k,v]) => k+': '+v).join('%0D%0A');
+            const mailto = 'mailto:funterrancebouncingcastles@gmail.com=' + encodeURIComponent('New inquiry from website') + '&body=' + encodeURIComponent(body);
+            window.location.href = mailto;
+        }
+    </script>
+</body>
+</html>
+<section id="funterrance" style="margin-top:36px;">
+    <div class="container" style="display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:start;">
+        <div style="background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(9,30,66,0.04)">
+            <h2 style="margin-top:0">Funterrance Bouncing Castles — Nairobi CBD</h2>
+            <p style="color:var(--muted)">Premium bouncing castle rentals for parties, corporate events and school functions across Nairobi CBD. Safe, inspected equipment and on-time delivery.</p>
+            <ul style="color:var(--muted);padding-left:18px;margin-top:12px">
+                <li>Indoor and outdoor setups</li>
+                <li>Attendant + setup included</li>
+                <li>Flexible hourly and full-day rates</li>
+            </ul>
+
+            <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;">
+                <button id="locateBtn" class="cta-btn" style="background:#10b981">Get Directions</button>
+                <a href="mailto:funterrancebouncingcastles@gmail.com" class="cta-btn" style="background:var(--accent)">Email Bookings</a>
+                <a id="callBtn" href="tel:+254741144518" class="cta-btn" style="background:#ef4444">Call: +254 741144518</a>
+            </div>
+
+            <div style="margin-top:14px;font-size:14px;color:var(--muted)">
+                <strong>Address:</strong>
+                <div>Kenya National Theatre area, Nairobi CBD</div>
+                <div style="margin-top:6px">Hours: Mon–Sun 08:00–20:00</div>
+            </div>
+
+            <div style="margin-top:16px;">
+                <label style="display:block;font-weight:600;margin-bottom:6px">Quick booking</label>
+                <form id="quickBook" style="display:grid;gap:8px">
+                    <input name="name" placeholder="Full name" required />
+                    <input name="phone" placeholder="Phone number" required />
+                    <select name="castle">
+                        <option>Standard Castle (Small)</option>
+                        <option>Deluxe Castle (Medium)</option>
+                        <option>Mega Castle (Large + Slide)</option>
+                    </select>
+                    <input type="datetime-local" name="date" required />
+                    <button type="submit" class="cta-btn" style="background:#0b76ef">Request Quote</button>
+                    <div id="bookMsg" style="font-size:13px;color:var(--muted)"></div>
+                </form>
+            </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="background:var(--card);padding:12px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(9,30,66,0.04);">
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                    <strong>Location & directions</strong>
+                    <div style="font-size:13px;color:var(--muted)">Nairobi CBD</div>
+                </div>
+            </div>
+
+            <div id="mapCard" style="height:420px;border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 20px rgba(9,30,66,0.04)">
+                <div id="map" style="height:100%;width:100%"></div>
+            </div>
+
+            <div style="display:flex;gap:8px;align-items:center">
+                <label style="font-size:13px;color:var(--muted);margin-right:6px">Transport</label>
+                <select id="travelMode" style="padding:8px;border-radius:8px">
+                    <option value="driving">Driving</option>
+                    <option value="walking">Walking</option>
+                    <option value="cycling">Cycling</option>
+                </select>
+                <button id="clearRoute" style="margin-left:auto;padding:8px;border-radius:8px;background:#efefef;border:0">Clear</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
+
+<script>
+    (function(){
+        // Business location: Nairobi CBD (approx)
+        const businessLatLng = L.latLng(-1.286389, 36.817223);
+
+        // initialize map
+        const map = L.map('map', {zoomControl:true}).setView(businessLatLng, 15);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors'}).addTo(map);
+
+        // business marker
+        const marker = L.marker(businessLatLng).addTo(map).bindPopup('<strong>Funterrance Bouncing Castles</strong><br>Nairobi CBD').openPopup();
+
+        // routing control (no waypoints initially)
+        let router = L.Routing.control({
+            waypoints: [],
+            showAlternatives: false,
+            routeWhileDragging: false,
+            addWaypoints: false,
+            lineOptions: {styles:[{color:'#0b76ef',opacity:0.9,weight:6}]},
+            createMarker: function(i, wp, n) {
+                if (i === n - 1) {
+                    return L.marker(wp.latLng, {icon: L.icon({iconUrl:'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png', iconSize:[25,41], iconAnchor:[12,41]})}).bindPopup('Funterrance');
+                }
+                return L.marker(wp.latLng);
+            }
+        }).addTo(map);
+
+        // helper to set travel profile for OSRM
+        function profileFor(mode){
+            // OSRM profiles: car, bike, foot
+            if (mode === 'walking') return 'foot';
+            if (mode === 'cycling') return 'bike';
+            return 'car';
+        }
+
+        // update route using user's location
+        async function routeFromUser(pos){
+            const userLatLng = L.latLng(pos.coords.latitude, pos.coords.longitude);
+            const mode = document.getElementById('travelMode').value;
+            // replace routing control with new router using chosen profile
+            const serviceUrl = 'https://router.project-osrm.org/route/v1';
+            router.getPlan().setWaypoints([userLatLng, businessLatLng]);
+            // set OSRM service URL with profile
+            router.options.router = L.Routing.osrmv1({serviceUrl: serviceUrl + '/' + profileFor(mode)});
+            router.route();
+            map.fitBounds(L.latLngBounds([userLatLng, businessLatLng]), {padding:[60,60]});
+        }
+
+        // Get location button
+        document.getElementById('locateBtn').addEventListener('click', function(){
+            if (!navigator.geolocation) {
+                alert('Geolocation not supported by your browser');
+                return;
+            }
+            navigator.geolocation.getCurrentPosition(routeFromUser, function(err){
+                alert('Unable to retrieve your location. Please allow location access or use an address.');
+            }, {timeout:10000});
+        });
+
+        // travel mode change: re-route if waypoints exist
+        document.getElementById('travelMode').addEventListener('change', function(){
+            const wps = router.getWaypoints();
+            // only re-route when user waypoint exists (first waypoint not null)
+            if (wps && wps.length === 2 && wps[0].latLng) {
+                router.options.router = L.Routing.osrmv1({serviceUrl: 'https://router.project-osrm.org/route/v1/' + (this.value === 'walking' ? 'foot' : this.value === 'cycling' ? 'bike' : 'car')});
+                router.route();
+            }
+        });
+
+        // clear route
+        document.getElementById('clearRoute').addEventListener('click', function(){
+            router.setWaypoints([]);
+            map.setView(businessLatLng, 15);
+        });
+
+        // Quick booking handler: open an email with booking details (simple interactive demo)
+        document.getElementById('quickBook').addEventListener('submit', function(e){
+            e.preventDefault();
+            const fd = new FormData(e.target);
+            const name = fd.get('name');
+            const phone = fd.get('phone');
+            const castle = fd.get('castle');
+            const date = fd.get('date');
+            const body = `Booking request%0D%0AName: ${encodeURIComponent(name)}%0D%0APhone: ${encodeURIComponent(phone)}%0D%0ACastle: ${encodeURIComponent(castle)}%0D%0ADate: ${encodeURIComponent(date)}`;
+            window.location.href = 'mailto:funterrancebouncingcastles@gmail.com ?subject=' + encodeURIComponent('Booking request') + '&body=' + body;
+            document.getElementById('bookMsg').textContent = 'Opening email client to send your request…';
+            setTimeout(()=>document.getElementById('bookMsg').textContent = '', 4000);
+        });
+
+        // add simple tap on map to set starting point
+        map.on('click', function(e){
+            const start = e.latlng;
+            router.setWaypoints([start, businessLatLng]);
+            map.fitBounds(L.latLngBounds([start, businessLatLng]), {padding:[60,60]});
+        });
+
+        // accessibility: keyboard focus for map container
+        const mapCard = document.getElementById('mapCard');
+        mapCard.setAttribute('tabindex','0');
+        mapCard.addEventListener('keypress', function(e){
+            if (e.key === 'Enter') {
+                map.invalidateSize();
+            }
+        });
+
+        // place a subtle pulsing circle to highlight business
+        const pulse = L.circleMarker(businessLatLng, {radius:18, color:'#0b76ef', weight:1, opacity:0.08, fillOpacity:0.04}).addTo(map);
+    })();
+</script>
